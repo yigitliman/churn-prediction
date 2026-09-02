@@ -122,6 +122,12 @@ docker-compose up --build
 | Prometheus | http://localhost:9090 |
 | Grafana | http://localhost:3000 (admin / admin) |
 
+CI publishes the API image to GHCR on every push to `main`:
+
+```bash
+docker pull ghcr.io/yigitliman/churn-prediction:latest
+```
+
 ## API Endpoints
 
 | Method | Endpoint | Description |
